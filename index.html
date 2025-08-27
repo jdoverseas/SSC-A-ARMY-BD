@@ -1,0 +1,66 @@
+ssc-a-plus-army-bd/
+├── public/
+│   ├── index.html
+│   ├── manifest.webmanifest
+│   ├── icons/
+│   │   ├── icon-192.png
+│   │   ├── icon-512.png
+│   │   └── favicon.svg
+│   ├── bg/
+│   │   └── hero-ai.jpg
+│   └── fonts/
+│       ├── noto-sans-bengali.woff2
+│       └── noto-sans-bengali.css
+├── src/
+│   ├── styles/
+│   │   ├── tokens.css
+│   │   ├── components.css
+│   │   └── fonts.css
+│   ├── lib/
+│   │   ├── api.js
+│   │   ├── db.js
+│   │   ├── srs.js
+│   │   ├── i18n.js
+│   │   └── utils.js
+│   ├── views/
+│   │   ├── home.js
+│   │   ├── lesson.js
+│   │   ├── onboarding.js
+│   │   └── profile.js
+│   ├── components/
+│   │   ├── question.js
+│   │   ├── progress-ring.js
+│   │   └── gamification.js
+│   └── main.js
+├── server/
+│   ├── index.js
+│   ├── routes/
+│   │   ├── ai.js
+│   │   ├── questions.js
+│   │   └── stats.js
+│   ├── data/
+│   │   └── seed-ssc.json
+│   ├── middleware/
+│   │   ├── validation.js
+│   │   └── rateLimit.js
+│   └── lib/
+│       └── llm-wrapper.js
+├── tests/
+│   ├── unit/
+│   │   ├── api.test.js
+│   │   └── utils.test.js
+│   └── e2e/
+│       └── onboarding.spec.js
+├── i18n/
+│   └── bn.json
+├── docker/
+│   ├── nginx.conf
+│   └── prometheus.yml
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+├── .env.example
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── README.md
