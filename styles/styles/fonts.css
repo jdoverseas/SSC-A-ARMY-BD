@@ -1,0 +1,61 @@
+/* Bengali font stack with proper fallbacks */
+:root {
+  --font-bengali: 'Noto Sans Bengali', 'AdorshoLipi', 'SolaimanLipi', 'Vrinda', 'Kalpurush', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-bengali);
+  line-height: 1.6;
+}
+
+/* Ensure proper rendering for Bengali text */
+.bn-text {
+  font-family: var(--font-bengali);
+  line-height: 1.8;
+  text-rendering: optimizeLegibility;
+}
+
+/* Font sizes for different elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bengali);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.125rem; }
+
+p, li, span {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Special classes for Bengali content */
+.bn-heading {
+  font-family: var(--font-bengali);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.bn-body {
+  font-family: var(--font-bengali);
+  line-height: 1.6;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.125rem; }
+  h6 { font-size: 1rem; }
+  
+  p, li, span {
+    font-size: 0.9rem;
+  }
+}
